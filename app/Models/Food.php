@@ -32,7 +32,7 @@ class Food extends Model
         return Carbon::parse($value)->timestamp;
     }
 
-    public function toAttay()
+    public function toArray()
     {
         $toArray = parent::toArray();
         $toArray['picturePath'] = $this->picturePath;
